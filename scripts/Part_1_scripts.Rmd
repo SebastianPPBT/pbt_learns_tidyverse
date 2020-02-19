@@ -5,7 +5,7 @@ output:
     df_print: paged
 ---
 
-If you are able to open this notebook and render it using knit, then you have successfully done the following: 
+If you are able to open this notebook and render it using knit, then you have successfully done the following:
 
 - Installed R
 - Installed R studio 
@@ -64,6 +64,7 @@ Lets explore this notebook a bit more. Say you want to add a small chunk where t
 To do this inside this notebook you will have to first insert a code chunk to run R. Refer to step 1 of this notebook. This is done by using the command `install.packages(package name)`
 
 ```{r}
+#install.packages('tidyverse')
 #Install 'tidyverse' package
 #
 ```
@@ -78,6 +79,7 @@ So you have just installed a new package to the R environment. That doesn't mean
 ```{r}
 #Load the package you just downloaded.
 #
+library(tidyverse)
 ```
 
 ### 6. Check if the package is loaded
@@ -91,7 +93,7 @@ There are two ways to do this:
 
 ```{r}
 #See all pacakages installed
-#
+search()
 ```
 
 Another good practice at the end of your R session is to check information associated with your session. This can be done by using the function `sessionInfo()`. Render the notebook to see your session information as an HTML output. 
@@ -99,4 +101,7 @@ Another good practice at the end of your R session is to check information assoc
 ```{r}
 #Find out your session info
 #
+sessionInfo()
+#
 ```
+Installed the packages and first steps.
